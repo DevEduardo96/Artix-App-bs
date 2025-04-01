@@ -1,0 +1,18 @@
+:root {
+  --braco: #ffff;
+  --gelo: #f1f1f1;
+  --verde: #19c463;
+  --preto: #2a2a2a;
+}
+
+.logo {
+  color: var(--verde);
+}
+
+.busca {
+  background-color: var(--verde);
+}
+
+.titulos {
+  color: var(--verde);
+}

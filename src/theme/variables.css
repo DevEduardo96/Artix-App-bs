@@ -1,0 +1,20 @@
+/* For information on how to create your own theme, please see:
+http://ionicframework.com/docs/theming/ */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Altera a cor dos ícones quando a aba está ativa */
+ion-tab-button.tab-selected ion-icon {
+  color: var(--verde);
+}
+
+/* Altera a cor do texto quando a aba está ativa */
+ion-tab-button.tab-selected .tab-label {
+  color: var(--verde);
+}
