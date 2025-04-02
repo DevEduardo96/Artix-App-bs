@@ -36,6 +36,8 @@ import Products from "./pages/Products";
 import Favorites from "./pages/Favorites";
 import Profile from "./pages/Profile";
 
+import "./App.css";
+
 setupIonicReact();
 
 const App: React.FC = () => (
@@ -52,23 +54,27 @@ const App: React.FC = () => (
           </Route>
         </IonRouterOutlet>
 
-        <IonTabBar slot="bottom">
-          <IonTabButton tab="home" href="/home">
+        <IonTabBar slot="bottom" className="ion-tab-bar">
+          <IonTabButton tab="home" href="/home" className="tab-button">
             <IonIcon icon={home} />
             <IonLabel className="tab-label">Início</IonLabel>
           </IonTabButton>
 
-          <IonTabButton tab="products" href="/products">
+          <IonTabButton tab="products" href="/products" className="tab-button">
             <IonIcon icon={cart} />
             <IonLabel className="tab-label">Produtos</IonLabel>
           </IonTabButton>
 
-          <IonTabButton tab="favorites" href="/favorites">
+          <IonTabButton
+            tab="favorites"
+            href="/favorites"
+            className="tab-button"
+          >
             <IonIcon icon={heart} />
             <IonLabel className="tab-label">Favoritos</IonLabel>
           </IonTabButton>
 
-          <IonTabButton tab="profile" href="/profile">
+          <IonTabButton tab="profile" href="/profile" className="tab-button">
             <IonIcon icon={person} />
             <IonLabel className="tab-label">Usuário</IonLabel>
           </IonTabButton>

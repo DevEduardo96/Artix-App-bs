@@ -14,8 +14,15 @@ const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
+        <IonToolbar color="dark" className="barra-superior">
+          <h1 className="txbarra-superior">barra superior</h1>
+        </IonToolbar>
+
         <IonToolbar>
-          <IonTitle class="logo">Artix</IonTitle>
+          <IonTitle className="logo">
+            {" "}
+            <h1>ARTFIX</h1>
+          </IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

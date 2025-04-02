@@ -13,6 +13,9 @@ const Favorites: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
+        <IonToolbar color="dark" className="barra-superior">
+          <h1 className="txbarra-superior">barra superior</h1>
+        </IonToolbar>
         <IonToolbar>
           <IonTitle className="titulos">Favoritos</IonTitle>
         </IonToolbar>

@@ -13,6 +13,9 @@ const Profile: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
+        <IonToolbar color="dark" className="barra-superior">
+          <h1 className="txbarra-superior">barra superior</h1>
+        </IonToolbar>
         <IonToolbar>
           <IonTitle className="titulos">Usuário</IonTitle>
         </IonToolbar>
@@ -20,6 +23,7 @@ const Profile: React.FC = () => {
       <IonContent fullscreen>
         <div className="p-4">
           <h2 className="text-xl font-bold">Seu Perfil</h2>
+          <h3>eduardoaraujo_96@outlook.com</h3>
           {/* Add profile content here */}
         </div>
       </IonContent>
