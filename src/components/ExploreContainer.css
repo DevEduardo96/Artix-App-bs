@@ -67,6 +67,57 @@
   font-size: 24px;
 }
 
+.logo {
+  color: var(--preto);
+  font-size: 35px;
+}
+
 .label {
   font-size: 14px;
+}
+
+/*Estilo do carrinho de compra */
+.btn-cart {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5%;
+  border: 1px solid var(--branco);
+  border-radius: 50%;
+  font-size: 24px;
+  color: var(--preto);
+}
+
+.btn-cart::before {
+  content: attr(data-count);
+  background: var(--verde);
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--preto);
+  position: absolute;
+  top: 3px;
+  right: 0;
+  margin-right: 9%;
+}
+
+/* Div que recobre o carrinho e a logo */
+.top-nav {
+  width: 100%;
+  height: 60px;
+  background: var(--branco);
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+}
+
+/* Se data-count for igual a "0", esconder o contador */
+.btn-cart[data-count="0"]::before {
+  display: none !important;
 }

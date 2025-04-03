@@ -9,6 +9,7 @@ import {
 } from "@ionic/react";
 
 import "./css/Home.css";
+import Cart from "../components/ExploreContainer";
 
 const Home: React.FC = () => {
   return (
@@ -18,16 +19,15 @@ const Home: React.FC = () => {
           <h1 className="txbarra-superior">barra superior</h1>
         </IonToolbar>
 
-        <IonToolbar>
-          <IonTitle className="logo">
-            {" "}
-            <h1>ARTFIX</h1>
+        <IonToolbar className="ion-toolbar">
+          <IonTitle className="titulo">
+            <Cart></Cart>
+            <IonSearchbar className="busca" placeholder="Digite sua busca..." />
           </IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <div className="p-4">
-          <IonSearchbar className="busca" placeholder="Digite sua busca..." />
           <h2 className="text-xl font-bold mt-4">Conteúdo principal</h2>
           {/* Add your main content here */}
         </div>

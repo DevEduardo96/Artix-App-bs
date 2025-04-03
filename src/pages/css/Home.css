@@ -7,18 +7,15 @@
 
 .txbarra-superior {
   margin-left: 33%;
-}
-
-.logo {
-  color: var(--preto);
-  font-size: 35px;
+  box-shadow: none;
 }
 
 /* background */
 .busca {
-  background-color: var(--branco);
+  background-color: rgb(255, 255, 255);
 }
 
-.titulos {
-  color: var(--preto);
+.titulo {
+  border-radius: 20px;
+  box-shadow: none;
 }

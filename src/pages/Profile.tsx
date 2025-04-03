@@ -17,7 +17,9 @@ const Profile: React.FC = () => {
           <h1 className="txbarra-superior">barra superior</h1>
         </IonToolbar>
         <IonToolbar>
-          <IonTitle className="titulos">Usuário</IonTitle>
+          <IonTitle className="top-nav">
+            <h1>Usuário</h1>
+          </IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

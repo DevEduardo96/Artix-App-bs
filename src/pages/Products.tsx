@@ -3,11 +3,13 @@ import {
   IonContent,
   IonHeader,
   IonPage,
+  IonSearchbar,
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
 
 import "./css/Home.css";
+import Cart from "../components/ExploreContainer";
 
 const Products: React.FC = () => {
   return (
@@ -17,7 +19,10 @@ const Products: React.FC = () => {
           <h1 className="txbarra-superior">barra superior</h1>
         </IonToolbar>
         <IonToolbar>
-          <IonTitle className="titulos">Produtos</IonTitle>
+          <IonTitle className="titulos">
+            <Cart></Cart>
+            <IonSearchbar className="busca" placeholder="Digite sua busca..." />
+          </IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
